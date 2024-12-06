@@ -1,0 +1,23 @@
+name: "FAS HASS"
+description: "FAS add-on!"
+version: "1.0.7"
+slug: "fas_hass"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+ports:
+  3000/tcp: 8000
+boot: auto
+# Add these lines for USB access
+uart: true
+privileged:
+  - IPC_LOCK
+  - SYS_ADMIN
+  - SYS_RAWIO
+devices:
+  - /dev/ttyUSB0
