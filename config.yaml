@@ -1,6 +1,6 @@
 name: "FAS HASS"
 description: "FAS add-on!"
-version: "1.0.7"
+version: "1.0.8"
 slug: "fas_hass"
 init: false
 arch:
